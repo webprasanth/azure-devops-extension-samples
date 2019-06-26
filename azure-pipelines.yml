@@ -1,4 +1,3 @@
-
 trigger:
 - master
 
@@ -6,7 +5,7 @@ pool:
   vmImage: 'vs2017-win2016'
 
 steps:
-- task: katalonTask@0
+- task: Bash@3
   inputs:
-    version: '6.2.0'
-    executeArgs: '''-browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Regression Tests/All tests"'''
+    filePath: 'https://github.com/katalon-studio-samples/azure-devops-extension-samples/blob/master/katatlon-test.sh'
+
