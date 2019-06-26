@@ -7,5 +7,5 @@ pool:
 steps:
 - task: Bash@3
   inputs:
-    filePath: 'https://github.com/katalon-studio-samples/azure-devops-extension-samples/blob/master/katatlon-test.sh'
+    filePath: 'katatlon-test.sh'
 
