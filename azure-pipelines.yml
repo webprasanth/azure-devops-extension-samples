@@ -5,7 +5,9 @@ pool:
   vmImage: 'vs2017-win2016'
 
 steps:
-- task: Bash@3
+- task: AzureCLI@1
   inputs:
-    filePath: 'katatlon-test.sh'
+    azureSubscription: 'GBS - IoT (ed03d0f8-d22c-4c9d-b117-266f95c38df0)'
+    scriptLocation: 'scriptPath'
+    scriptPath: '/katalon/run_chrome.sh'
 
